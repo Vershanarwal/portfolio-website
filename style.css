@@ -920,3 +920,880 @@ body.light-mode footer p,
 body.light-mode footer a{
     color:#222;
 }
+/* =========================================
+   FINAL RESPONSIVE DESIGN
+   Desktop • Laptop • Tablet • Mobile
+========================================= */
+
+/* Prevent horizontal scrolling */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make all images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Keep sections inside the screen */
+section {
+    width: calc(100% - 40px);
+}
+
+/* Better project grid on all screens */
+.projects-grid {
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(330px, 100%), 1fr)
+    );
+}
+
+/* Contact cards */
+.contact-container {
+    width: 100%;
+}
+
+.contact-card {
+    width: 260px;
+    max-width: 100%;
+}
+
+/* Internship content */
+.internship-card {
+    width: 100%;
+}
+
+.internship-header {
+    width: 100%;
+}
+
+.internship-duration {
+    max-width: 100%;
+}
+
+/* Beyond the Screen */
+.beyond-image {
+    max-width: 230px;
+}
+
+/* Certificates */
+.certificate-grid {
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(250px, 100%), 1fr)
+    );
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content h2 {
+        font-size: 25px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 28px;
+    }
+
+    .about-section,
+    #beyond,
+    #internship {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .projects-grid {
+        gap: 20px;
+    }
+
+    .internship-header {
+        align-items: flex-start;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    nav h2 {
+        font-size: 22px;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    #theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+
+    /* Hero */
+    header {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .hero-content h2 {
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .status-badge {
+        font-size: 13px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .btn,
+    .btn-outline {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+
+    /* General sections */
+    section {
+        width: calc(100% - 30px);
+        margin: 20px auto;
+        padding: 25px 18px;
+        border-radius: 15px;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+
+    /* Stats */
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        padding: 35px 15px;
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 20px 10px;
+    }
+
+
+    /* About */
+    .about-section {
+        padding: 50px 15px;
+    }
+
+    .about-text {
+        padding: 25px 20px;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Skills */
+    .skills {
+        justify-content: center;
+    }
+
+    .skills span {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+
+    /* Education timeline */
+    .timeline {
+        padding-left: 25px;
+        margin-left: 5px;
+    }
+
+    .timeline-dot {
+        left: -36px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .project-card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tech-stack {
+        gap: 8px;
+    }
+
+    .tech-stack span {
+        font-size: 13px;
+        padding: 7px 11px;
+    }
+
+
+    /* Beyond the Screen */
+    #beyond {
+        padding: 55px 15px;
+    }
+
+    #beyond h2 {
+        font-size: 32px;
+    }
+
+    .beyond-intro {
+        font-size: 16px;
+    }
+
+    .beyond-image {
+        width: 190px;
+        max-width: 70%;
+    }
+
+    .beyond-tags {
+        gap: 8px;
+    }
+
+    .beyond-tags span {
+        padding: 8px 13px;
+        font-size: 13px;
+    }
+
+    .beyond-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .beyond-card {
+        padding: 22px;
+    }
+
+
+    /* Internship */
+    #internship {
+        padding: 55px 15px;
+    }
+
+    .internship-card {
+        padding: 22px;
+    }
+
+    .internship-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .internship-header h3 {
+        font-size: 21px;
+    }
+
+    .internship-header h4 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .internship-duration {
+        align-self: flex-start;
+        font-size: 13px;
+        padding: 8px 13px;
+    }
+
+    .internship-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .internship-box {
+        padding: 20px;
+    }
+
+
+    /* Certificates */
+    .certificate-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .certificate-card {
+        padding: 25px 18px;
+    }
+
+
+    /* Contact */
+    #contact {
+        width: calc(100% - 30px);
+        margin: 50px auto;
+        padding: 30px 15px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 320px;
+        padding: 25px 15px;
+    }
+
+    .contact-card a {
+        font-size: 14px;
+    }
+
+
+    /* Footer */
+    footer {
+        padding: 40px 15px;
+        margin-top: 50px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-links a {
+        margin: 0;
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONES
+   480px and below
+========================================= */
+
+@media (max-width: 480px) {
+
+    nav h2 {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 8px 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    header {
+        padding: 65px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    section {
+        width: calc(100% - 20px);
+        padding: 22px 15px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        padding: 25px 10px;
+    }
+
+    .skills span {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-card {
+        padding: 17px;
+    }
+
+    .project-card a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .internship-card {
+        padding: 18px;
+    }
+
+    .internship-tags span {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .beyond-tags span {
+        width: 100%;
+    }
+
+    .certificate-card {
+        padding: 22px 15px;
+    }
+
+    .certificate-icon {
+        font-size: 34px;
+    }
+
+    .contact-card {
+        max-width: 100%;
+    }
+}
+/* =========================================
+   MOBILE + LIGHT MODE FINAL FIX
+========================================= */
+
+/* Fix sizing everywhere */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Make major containers stay inside screen */
+nav,
+header,
+section,
+footer {
+    max-width: 100%;
+}
+
+/* =========================================
+   LIGHT MODE - CARD TEXT FIX
+========================================= */
+
+/* About information cards */
+body.light-mode .about-info > div,
+body.light-mode .about-info .info-card {
+    background: #ffffff;
+    color: #222222;
+}
+
+body.light-mode .about-info > div *,
+body.light-mode .about-info .info-card * {
+    color: #222222;
+}
+
+/* Internship cards */
+body.light-mode .internship-box {
+    background: #ffffff;
+    color: #222222;
+}
+
+body.light-mode .internship-box * {
+    color: #222222;
+}
+
+/* Internship main card */
+body.light-mode .internship-card {
+    color: #222222;
+}
+
+/* Project cards */
+body.light-mode .project-card {
+    color: #222222;
+}
+
+body.light-mode .project-card p,
+body.light-mode .project-card h3 {
+    color: #222222;
+}
+
+/* Certificate cards */
+body.light-mode .certificate-card {
+    color: #222222;
+}
+
+body.light-mode .certificate-card h3,
+body.light-mode .certificate-card p {
+    color: #222222;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Navigation */
+    nav {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 15px;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav-right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav-links {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    #theme-toggle {
+        flex-shrink: 0;
+    }
+
+
+    /* Header */
+    header {
+        width: 100%;
+        max-width: 100%;
+        padding: 70px 18px;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(30px, 9vw, 40px);
+        word-wrap: break-word;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* ALL SECTIONS */
+    section {
+        width: calc(100% - 20px) !important;
+        max-width: calc(100% - 20px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 25px 16px;
+        overflow: hidden;
+    }
+
+
+    /* About */
+    .about-section,
+    #about {
+        width: calc(100% - 20px) !important;
+        max-width: calc(100% - 20px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .about-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-info {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .about-info > div,
+    .about-info .info-card {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    /* Internship */
+    #internship {
+        width: calc(100% - 20px) !important;
+        max-width: calc(100% - 20px) !important;
+    }
+
+    .internship-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .internship-header {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .internship-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .internship-box {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    /* Projects */
+    .projects-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+
+    /* Certificates */
+    .certificate-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* Beyond the Screen */
+    #beyond {
+        width: calc(100% - 20px) !important;
+        max-width: calc(100% - 20px) !important;
+    }
+
+    .beyond-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .beyond-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* Contact */
+    #contact {
+        width: calc(100% - 20px) !important;
+        max-width: calc(100% - 20px) !important;
+    }
+
+    .contact-container {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+    nav {
+        padding: 14px 10px;
+    }
+
+    nav h2 {
+        font-size: 21px;
+    }
+
+    .nav-links {
+        gap: 10px 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    header {
+        padding: 60px 15px;
+    }
+
+    section {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        padding: 22px 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .about-info > div,
+    .about-info .info-card {
+        padding: 20px 18px;
+    }
+
+    .internship-box {
+        padding: 20px 18px;
+    }
+
+    .contact-card {
+        max-width: 100%;
+    }
+}
