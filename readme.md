@@ -63,6 +63,12 @@ Coming Soon (GitHub Pages)
 
 ---
 
+##📄 License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute this project, subject to the terms of the MIT License.
+
+See the "LICENSE" (LICENSE) file for more details.
+
 ## 📬 Connect With Me
 
 **LinkedIn:**  
